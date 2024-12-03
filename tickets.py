@@ -17,7 +17,7 @@ def open_ticket(name):
    file = open(name, "r")
    ret = []
    for x in file:
-        ret.append(x)
+        ret.append(x.splitlines())
    print(ret)
 
 def main():
